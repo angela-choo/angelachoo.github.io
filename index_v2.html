@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Angela Choo</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Fonts --> 
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+	
+	<style>
+		@import "compass/css3";
+
+		body {
+			font-family: 'Lato', sans-serif;
+			font-weight: lighter;
+            font-size: 16px;
+		}
+
+		.jumbotron{
+			background: url(DSC01524.jpg) no-repeat center center fixed; 
+
+ 			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+
+			font-family: 'Lato', sans-serif;
+			font-weight: lighter;
+  		}
+
+  		.jumbotron.footer {
+  			
+  			background: url(black.png), url(hello_giphy.gif) ;
+  			background-size: cover;
+  			background-position: center, center;
+  			background-repeat: no-repeat, no-repeat;
+  			min-height: 40vh;	
+  		}
+
+  		.socialdeets {
+  			font-size: 15px;
+  			text-align: center;
+  		}
+        
+		.twitter:hover, .linkedin:hover, .email:hover{
+		    position: relative;
+		    top: -5px;
+		}
+
+        img.twitter, img.linkedin, img.email{
+            height: 40px;
+            margin: 10px;
+        } 
+        
+  		a#twitter, a#linkedin, a:hover#twitter, a:hover#linkedin {
+  			color: white;
+  		}
+
+  		.overlay {
+  			color: white !important;
+  		}  			
+
+		.bounce {
+			position:absolute;
+			height: 50px;
+			width: 100%; 
+			bottom: 100px;
+			-webkit-animation:bounce 1s infinite;
+		}
+
+		@-webkit-keyframes bounce {
+			0%       { bottom:90px; }
+			25%, 75% { bottom:95px; }
+			50%      { bottom:100px; }
+			100%     { bottom:80px;}
+		}
+		
+		.valign {
+			position:relative;
+			top: 20%;
+			vertical-align: middle;
+		}
+		
+		section {
+			padding: 100px 0px 100px 0px;
+		}
+		.space {
+			padding: 20px 0px 20px 0;
+		}
+		
+		#begin {
+			
+			margin-top: 0px;
+			-webkit-background-clip: content-box;
+			background-clip: content-box;
+		}
+		
+		.navbar  {
+			margin-top: -30px;
+            background-color: white;
+            padding-top: 3px;
+            padding-bottom: 3px;
+		}
+        
+		.navbar-fixed {
+			top: 30px !important;
+		}
+
+		.nav.navbar-nav  {
+			display: inline-block;
+		}
+        
+        .border-bottom {
+            border-bottom: 1px solid #ccc !important;
+        }
+	
+        .nav-items {
+            text-transform: uppercase;
+            float: right;
+            font-size: 14px;
+            font-weight: 500;
+        }
+		.bar {
+			height:15px;
+			background:#cccccc;
+			color:black;
+			text-align:center;
+			width:100%;
+		}
+		
+		.start {
+			height:15px;
+		}
+
+		.anchor{
+			border-top: 50px solid transparent;
+			margin-top: -50px;
+			-webkit-background-clip: padding-box;
+			-moz-background-clip: padding;
+			background-clip: padding-box;
+		}
+		
+		#skill1.start {
+			background: #A1C969;
+			width: 0%;
+			max-width: 100%;
+			float: left;
+			-webkit-animation: skill1 2s 1 forwards;
+			-moz-animation: skill1 2s 1 forwards;
+			-ms-animation: skill1 2s 1 forwards;
+			animation: skill1 2s 1 forwards;
+		}
+		
+		$grid-columns: 10;
+
+		@-webkit-keyframes skill1 { 
+			from { }
+			to { width: 80% }
+		}
+
+		@-moz-keyframes skill1 { 
+			from { }
+			to { width: 80% }
+		}
+
+		@-ms-keyframes skill1 { 
+			from { }
+			to { width: 80% }
+		}
+
+		@keyframes skill1 { 
+			from { }
+			to { width: 80% }
+		}
+		
+		
+		#skill2.start {
+			background: #A1C969;
+			width: 0%;
+			max-width: 100%;
+			float: left;
+			-webkit-animation: skill2 2s 1 forwards;
+			-moz-animation: skill2 2s 1 forwards;
+			-ms-animation: skill2 2s 1 forwards;
+			animation: skill2 2s 1 forwards;
+		}
+		
+		@-webkit-keyframes skill2 { 
+			from { }
+			to { width: 80% }
+		}
+
+		@-moz-keyframes skill2 { 
+			from { }
+			to { width: 80% }
+		}
+
+		@-ms-keyframes skill2 { 
+			from { }
+			to { width: 80% }
+		}
+		@keyframes skill2 { 
+			from { }
+			to { width: 80% }
+		}
+		
+		#skill3.start {
+			background: #A1C969;
+			width: 0%;
+			max-width: 100%;
+			float: left;
+			-webkit-animation: skill3 2s 1 forwards;
+			-moz-animation: skill3 2s 1 forwards;
+			-ms-animation: skill3 2s 1 forwards;
+			animation: skill3 2s 1 forwards;
+		}
+		
+		@-webkit-keyframes skill3 { 
+			from { }
+			to { width: 80% }
+		}
+
+		@-moz-keyframes skill3 { 
+			from { }
+			to { width: 80% }
+		}
+
+		@-ms-keyframes skill3 { 
+			from { }
+			to { width: 80% }
+		}
+		@keyframes skill3 { 
+			from { }
+			to { width: 80% }
+		}
+		
+		.navbar-fixed {
+			top: 0;
+			z-index: 100;
+			position: fixed;
+            width: 100%;
+		}
+        
+        /* navbar prevents stacking start */
+        .navbar-collapse.collapse {
+            display: block!important;
+        }
+
+        .navbar-nav>li, .navbar-nav {
+            float: left !important;
+        }
+
+
+        .navbar-nav.navbar-right:last-child {
+            margin-right: -15px !important;
+        }
+
+        .navbar-right {
+            float: right!important;
+        }
+        /* navbar prevents stacking end */
+        
+	</style>
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<!--<script type="text/javascript" src="js/smoothscroll.js"></script>-->
+    <script type="text/javascript" src="scroll_animation.js"></script>
+
+	<script>
+	
+		// Returns true if the specified element has been scrolled into the viewport.
+		function isElementInViewport(elem) {
+			var $elem = $(elem);
+
+			// Get the scroll position of the page.
+			var scrollElem = ((navigator.userAgent.toLowerCase().indexOf('webkit') != -1) ? 'body' : 'html');
+			var viewportTop = $(scrollElem).scrollTop();
+			var viewportBottom = viewportTop + $(window).height();
+
+			// Get the position of the element on the page.
+			var elemTop = Math.round( $elem.offset().top );
+			var elemBottom = elemTop + $elem.height();
+
+			return ((elemTop < viewportBottom) && (elemBottom > viewportTop));
+		}
+
+		// Check if it's time to start the animation.
+		function checkAnimation() {
+			var $elem = $('#skill1');
+			
+			// If the animation has already been started
+			if ($elem.hasClass('start')) return;
+
+			if (isElementInViewport($elem)) {
+				// Start the animation
+				$elem.addClass('start');
+				$('#skill2').addClass('start');
+				$('#skill3').addClass('start');
+			}
+		}
+	
+		// Capture scroll events
+		//$(window).scroll(function(){
+		//	checkAnimation();
+		//});
+		
+		// ------ NavBar to stick function
+		$(document).ready(function() {
+			var $win = $(window);
+			var winH = $win.height();		// Get the window height
+		
+			$(window).scroll(function () {
+				if ($(window).scrollTop() > winH) {
+					$('.navbar').addClass('navbar-fixed');
+				}
+				if ($(window).scrollTop() < winH) {
+					$('.navbar').removeClass('navbar-fixed');
+				}
+			});
+		});
+	
+	</script>
+	
+</head>
+
+<body>
+	
+	<!-- Jumbotron -->
+	<div class="jumbotron text-center links" style="height:100vh;">
+		<div class="container valign">
+			<div class="container" style="color: white;">
+				<h1 class="text-center text-uppercase">Angela Choo</h1>
+				<p>Front-End Developer</p>
+				<a href="https://twitter.com/angela_choo" target="_blank"><img src="images/twitter.png" alt="Twitter" class="twitter bounce1"></a>
+				<a href="https://ca.linkedin.com/in/angelachoo" target="_blank"><img src="images/linkedin.png" alt="LinkedIn" class="linkedin bounce1"></a>
+				<a href="mailto:angela.choo.513@gmail.com?Subject=Hello Angela!" target="_top" style="color:white;"><img src="images/email.png" alt="Email" class="email bounce1"></a>
+			</div>
+		</div>
+		
+		<div class="container bounce" style="text-align: center; ">
+			<a href="#about-me" class="links">
+				<span class="glyphicon glyphicon-menu-down " style="padding: 50px 50px 50px 50px; color: white;" aria-hidden="true"></span>
+			</a>
+		</div>
+		
+	</div><!-- End of Jumbotron -->
+	
+	<!-- NavBar -->
+    <header>
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li>
+                            <a class="navbar-brand links" href="#">ANGELA CHOO</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right nav-items">
+                      <li><a href="#about-me" class="links">About Me</a></li>
+                      <li><a href="#edu" class="links">Education</a></li>
+                      <li><a href="#resume" class="links">Experience</a></li> 
+                      <li><a href="#contact" class="links">Contact</a></li> 
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+        
+        <!--<nav class="navbar navbar-full navbar-light bg-faded border-bottom">
+            <a class="navbar-brand links" href="#">ANGELA CHOO</a>
+            <ul class="nav navbar-nav nav-items">
+				<li><a href="#about-me" class="links">About Me</a></li>
+				<li><a href="#edu" class="links">Education</a></li>
+				<li><a href="#resume" class="links">Experience</a></li> 
+				<li><a href="#contact" class="links">Contact</a></li> 
+			</ul>
+        </nav>-->
+    </header>
+    
+	
+	<div id="begin" class="links" style="padding-top: 47px;"></div>
+
+	<!-- About Me -->
+	<section id="about-me" class="links">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 text-center">
+					<img src="angelachoo.png" class="img-circle"  width="200" height="200">
+				</div>
+				<div class="col-md-8">
+					<p>Hi there!<br><br>
+						It wasn’t an easy path for me to realize that technology is my ideal environment in which I thrive and succeed.<br>
+						With my strong communication skills, the ability to adapt to change, and understanding of UX/UI, I found myself loving the challenges front-end developers face.<br><br>
+						I am an individual who appreciates well-designed products and strives to achieve minimalism in everything I do, while also maintaining the intended functionality.<br><br>
+						Whenever I interact with different apps and products, I can’t help but wonder about the UX design behind it all; whether they’re specifically designed client products or simply just everyday things.<br><br>
+						I value working in environments that constantly use innovative new technologies to solve real-world problems.<br><br>
+						
+						<a href="mailto:angela.choo.513@gmail.com?Subject=Let's Make Change" target="_top" style="color:#5454c3;">Let’s make change together!</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</section><!-- End of About Me -->
+	
+	<div class="space"></div>	
+	
+	<!-- Education -->
+	<section id="edu" class="links">
+		<h1 class="text-center" style="text-transform: uppercase">Education</h1>
+		
+		<div class="container">
+
+			<div class="row">
+				<div class="col-sm-2">
+					<h6>2016</h6>
+				</div>
+				<div class="col-sm-10">
+					<div class="row">
+						<div class="col-xs-7">
+							<h5 style="text-transform: uppercase"><b>University of Waterloo</b></h5>
+						</div>
+						<div class="col-xs-5 text-right">
+							<h5>Waterloo, ON</h5>
+						</div>
+					</div>
+					<p>Bachelor of Mathematics</p>
+					<p>Honours Computational Mathematics, Cooperative Program, Computer Science Minor</p>
+				</div>
+			</div>
+			
+			<h4 class="text-center" style="text-transform: uppercase">Related Coursework</h4>
+
+			<div class="row">
+				<div class="col-sm-2">
+					<h6>2016</h6>
+				</div>
+				<div class="col-sm-10">
+					<div class="row">
+						<div class="col-xs-7">
+							<h5 style="text-transform: uppercase"><b>Brainstation io</b></h5>
+						</div>
+						<div class="col-xs-5 text-right">
+							<h5>Toronto, ON</h5>
+						</div>
+					</div>
+					<p>User Experience Design</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-2">
+					<h6>2014</h6>
+				</div>
+				<div class="col-sm-10">
+					<div class="row">
+						<div class="col-xs-7">
+							<h5 style="text-transform: uppercase"><b>University of Toronto, School of Continuing Studies</b></h5>
+						</div>
+						<div class="col-xs-5 text-right">
+							<h5>Toronto, ON</h5>
+						</div>
+					</div>
+					<p>Foundations of Project Management</p>
+				</div>
+			</div>
+		</div> 
+	</section> <!-- End of Education -->
+
+	<!-- Resume -->
+	<section id="resume">
+		<div class="container">
+			<h1 class="text-center" style="text-transform: uppercase">EXPERIENCE</h1>
+			<div class="row">
+				<div class="col-sm-2 ">
+					<h6>AUG 2016<br>ONGOING</h6>
+				</div>
+				<div class="col-sm-10">
+									
+					<div class="row">
+						<div class="col-xs-9">
+							<h5 style="text-transform: uppercase; font-weight: bold;">IT Solutions Developer</h5>
+							<h5><b>TD Bank</b> - Canadian Banking & Wealth Technology Solutions</h5>
+						</div>
+						<div class="col-xs-3 text-right">
+							<h5>Toronto, ON</h5>
+						</div>
+					</div>
+					<ul>
+						<li>Maintaining and implementing fixes with AngularJS for UI of trade order management platform in an agile project group</li>
+					</ul>
+				</div>
+
+				<div class="col-sm-2">
+					<h6>FEB 2016<br>JUL 2016</h6>
+				</div>
+				<div class="col-sm-10">
+									
+					<div class="row">
+						<div class="col-xs-9">
+							<h5 style="text-transform: uppercase; font-weight: bold;">Risk Associate</h5>
+							<h5><b>TD Bank</b> - Technology Risk Management and Infomation Security</h5>
+						</div>
+						<div class="col-xs-3 text-right">
+							<h5>Toronto, ON</h5>
+						</div>
+					</div>
+					<ul>
+						<li>Assessed 700+ exception requests for the Removable Memory Management Program, key findings presented to Chief Information Officer</li>
+						<li>Evaluated viability of Confluence as a new team collaboration platform and presented findings to Business Technology Risk Management team</li>
+					</ul>
+
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-sm-2">
+					<h6>JUL 2015<br>JAN 2016</h6>
+				</div>
+				<div class="col-sm-10">
+					<div class="row">
+						<div class="col-xs-9">
+							<h5 style="text-transform: uppercase; font-weight: bold;">Business Systems Analyst</h5>
+							<h5><b>TD Bank</b> - Canadian Banking & Wealth Technology Solutions</h5>
+						</div>
+						<div class="col-xs-3 text-right">
+							<h5>Mississuaga, ON</h5>
+						</div>
+					</div>
+					<ul>
+						<li>Deployed scheduled progress updates for Cheque Image Transformation Program implementations as Communication Lead</li>
+						<li>Created multiple master event schedules for various implementation projects by liaising with project leads, and ensured schedule accuracy throughout deployment</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-sm-2">
+					<h6>SEP 2014<br>DEC 2014</h6>
+				</div>
+				<div class="col-sm-10">
+					<div class="row">
+						<div class="col-xs-9">
+							<h5 style="text-transform: uppercase; font-weight: bold;">Project Coordinator&nbsp<small>(Co-op Position)</small></h5>
+							<h5><b>Manulife Financial</b> - Investment Division Global Services</h5>
+						</div>
+						<div class="col-xs-3 text-right">
+							<h5>Toronto, ON</h5>
+						</div>
+					</div>
+					<ul>
+						<li>Worked closely with project managers to deliver projects within time, budget, and quality targets</li>
+						<li>Efficiently handled various functions, including resource management, budget management, and risk and issue logging processes</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-sm-2">
+					<h6>JUN 2013<br>AUG 2013</h6>
+				</div>
+				<div class="col-sm-10">
+					<div class="row">
+						<div class="col-xs-9">
+							<h5 style="text-transform: uppercase; font-weight: bold;">Front-End Developer</h5>
+							<h5><b>Klick Health Inc.</b></h5>
+						</div>
+						<div class="col-xs-3 text-right">
+							<h5>Toronto, ON</h5>
+						</div>
+					</div>
+					<ul>
+						<li>Utilized HTML5, CSS3, JavaScript, and Adobe Photoshop to successfully implement client sales presentation</li>
+						<li>Translated draft designs into standard-compliant code and ensured cross-browser platform compatibility</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-sm-2">
+					<h6>MAY 2012<br>AUG 2012</h6>
+				</div>
+				<div class="col-sm-10">
+					<div class="row">
+						<div class="col-xs-9">
+							<h5 style="text-transform: uppercase; font-weight: bold;">Software Engineer&nbsp<small>(Co-op Position)</small></h5>
+							<h5><b>Paperless Post</b></h5>
+						</div>
+						<div class="col-xs-3 text-right">
+							<h5>New York, NY</h5>
+						</div>
+					</div>
+					<ul>
+						<li>Generated and implemented refinements on feature requests and resolved technical software specification issues with Product team members at a growing startup</li>
+						<li>Established expertise in an agile software shop capable of releasing high quality, meaningful software in a process with tight feedback loops</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-sm-2">
+					<h6>SEP 2011<br>DEC 2011</h6>
+				</div>
+				<div class="col-sm-10">
+					<div class="row">
+						<div class="col-xs-9">
+							<h5 style="text-transform: uppercase; font-weight: bold;">Developer&nbsp<small>(Co-op Position)</small></h5>
+							<h5><b>Bank of America Merrill Lynch</b></h5>
+						</div>
+						<div class="col-xs-3 text-right">
+							<h5>Toronto, ON</h5>
+						</div>
+					</div>
+					<ul>
+						<li>Sharpened ability to identify details while debugging existing C++ code and resolving problems for a mission-critical application in the Bank’s equity derivatives business</li>
+						<li>Improved interpersonal skills through managing assignments from multiple vice presidents</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-sm-2">
+					<h6>JAN 2011<br>APR 2011</h6>
+				</div>
+				<div class="col-sm-10">
+					<div class="row">
+						<div class="col-xs-9">
+							<h5 style="text-transform: uppercase; font-weight: bold;">Application Support Analyst&nbsp<small>(Co-op Position)</small></h5>
+							<h5><b>PricewaterhouseCoopers LLP</b></h5>
+						</div>
+						<div class="col-xs-3 text-right">
+							<h5>Toronto, ON</h5>
+						</div>
+					</div>
+					<ul>
+						<li>Balanced multiple technical problems, and proactively addressed production application issues</li>
+						<li>Conducted rigorous application testing during monthly Microsoft patching and a major application upgrade</li>
+					</ul>
+				</div>
+			</div>
+			
+			
+		</div>
+	</section> <!-- End of Resume -->
+	
+	<div class="bg"></div>
+	<div class="jumbotron text-center footer overlay" id="contact">
+		<h3 class="foottext">Say Hello!</h3>
+
+		<div class="container socialdeets">
+			<div class="col-md-4"> 
+				<a href="https://twitter.com/angela_choo" target="_blank" id="twitter"><img src="images/twitter.png" alt="Twitter" style="height:15px;vertical-align:initial;">&nbsphttps://twitter.com/angela_choo</a>
+			</div>
+			<div class="col-md-4">
+				<a href="https://ca.linkedin.com/in/angelachoo" target="_blank" id="linkedin"><img src="images/linkedin.png" alt="LinkedIn" style="height:15px;vertical-align:initial;">&nbsphttps://ca.linkedin.com/in/angelachoo</a>
+			</div>
+
+			<div class="col-md-4">
+				<a href="mailto:angela.choo.513@gmail.com?Subject=Hello Angela!" target="_top" style="color:white;"><img src="images/email.png" alt="Email" style="height:15px;vertical-align:initial;">&nbspangela.choo.513@gmail.com</a>
+			</div>
+		</div>
+
+	</div>
+
+  
+  
+  
+  <!-- Ideas: Download my resume -->
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
